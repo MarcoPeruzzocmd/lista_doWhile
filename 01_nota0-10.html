@@ -6,11 +6,11 @@
     */
 
     //Entrada
-
-
+    let nmr = 0
     //Processamento
-
-
+    while (nmr < 1 || nmr > 10 || isNaN(nmr)) {
+        nmr = Number(prompt("Insira um númro de 1 a 10!"))
+    }
     //Saída
-
+    alert(`O número inserido foi ${nmr}`)
 </script>

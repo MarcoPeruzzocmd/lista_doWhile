@@ -6,11 +6,13 @@
     */
 
     //Entrada
-
-
+    let usuario = prompt("Insira o seu nome de usuário")
+    let senha = prompt("Insira uma senha, ela não pode ser o mesmo nome de usuário")
     //Processamento
-
-
+    while (senha == usuario) {
+         usuario = prompt("Insira o seu nome de usuário")
+         senha = prompt("Insira uma senha, ela não pode ser o mesmo nome de usuário")
+    }
     //Saída
 
 </script>
