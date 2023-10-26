@@ -6,11 +6,16 @@
     */
 
     //Entrada
-
-
+    let populacaoB = 200000
+    let populacaoA = 80000
+    let anos = 0
     //Processamento
-
-
+    while (populacaoA < populacaoB) {
+        populacaoA += populacaoA * 1.03
+        populacaoB += populacaoB * 1.015
+        anos++
+    }
     //Saída
+    alert(`A população A levará ${anos} anos para ultrapassar a B.`)
 
 </script>

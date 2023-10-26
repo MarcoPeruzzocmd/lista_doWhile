@@ -11,11 +11,27 @@
     */
 
     //Entrada
-
-
+    let nome = ""
+    let idade = 0
+    let salario = 0
+    let sexo = ""
+    let estadoCivil = ""
     //Processamento
-
-
+    do {
+        nome = prompt("Insira seu nome (maior que tres caracteres)")
+    } while (nome.length < 3);
+    do {
+        idade = prompt("Insira sua idade (entre 0 e 150 anos)")
+    } while (idade < 0 && idade > 150);
+    do {
+        salario = prompt("Qual seu salário?")
+    } while (salario <= 0);
+    do {
+        sexo = prompt("Qual seu sexo? Insira com f ou m").toUpperCase()
+    } while (sexo != "F" && sexo != "M");
+    do {
+        estadoCivil = prompt("Informe seu estado civil com S, C, V e D").toUpperCase()
+    } while (estadoCivil != "S" && estadoCivil != "C" && estadoCivil != "V" && estadoCivil != "D");
     //Saída
 
 </script>

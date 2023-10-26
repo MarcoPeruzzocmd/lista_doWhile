@@ -20,13 +20,41 @@
     */
 
     //Entrada
-
-
+    let mariazinha = 0
+    let joaozinho =  0
+    let nulo = 0
+    let branco = 0
+    let opcao = 0
+    let vencedor = ""
     //Processamento
 
-
+    do {
+         opcao = prompt("As opções de votos são \n 1-Joãozinho \n 2-Mariazinha \n 3-Nulo \n 4-Branco (vote com 1, 2, 3 e 4). \n Entre com seu voto")
+        if (opcao == 1) {
+            joaozinho++
+        }
+        else if (opcao == 2) {
+            mariazinha++
+        }
+        else if (opcao == 3) {
+            nulo++
+        }
+        else if (opcao == 4) {
+            branco++
+        }
+    } while (opcao != 0) 
+    if (joaozinho > mariazinha) {
+        vencedor = "Joãozinho venceu"
+    }
+    else if (mariazinha > joaozinho) {
+        vencedor = "Mariazinha venceu"
+    }
+    else {
+        vencedor = "Empate"
+    }
     //Saída
-
+    let votos = (mariazinha + joaozinho + nulo + branco) / 100
+    alert(`NÚMERO DE VOTOS: \n Mariaznha = ${mariazinha}\nJoãozinho = ${joaozinho} \n PORCENTAGEM DE VOTOS NULOS E BRANCOS: \nBrancos = ${branco / votos}%\nNulos = ${nulo / votos}% \n CANDIDATO VENCEDOR = ${vencedor}`)
 </script>
 
 
